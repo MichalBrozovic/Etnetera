@@ -1,0 +1,221 @@
+input[type="checkbox"],
+input[type="radio"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+  // font-weight: 700;
+}
+
+input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 34px;
+  display: inline-block;
+  line-height: emMM(24);
+
+  &::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    border: 1px solid $color-font;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  &.disabled {
+    opacity: 0.7;
+  }
+}
+
+input[type="checkbox"]:checked + label {
+  &::before {
+    background-color: $color-primary;
+    border-color: $color-primary;
+  }
+
+  &::after {
+    // content: url(../img/icon/check.svg);
+    display: block;
+    line-height: 0;
+    width: 14px;
+    height: 15px;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+}
+
+input[type="radio"] + label {
+  padding-left: 44px;
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid $color-font;
+    background-color: $color-page-background;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+input[type="radio"]:checked + label {
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: $color-primary;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+  }
+}
+button {
+  padding: 0;
+  background-color: unset;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="search"],
+input[type="number"],
+textarea,
+select {
+  border: 1px solid #999999;
+  font-size: remMM($default-font-size);
+  width: 100%;
+  color: $color-font;
+  background-color: $color-page-background;
+  font-family: $default-font-family;
+  padding: 13px 15px 13px 15px; // border-radius: 6px;
+  outline: unset;
+  box-shadow: unset;
+  font-size: remMM(16);
+  &::placeholder {
+    font-size: inherit;
+    opacity: 1;
+    color: inherit;
+    font-family: inherit;
+  }
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+input[type="email"] {
+  // padding-left: 44px;
+  // background-image: url(../img/icon/mail.svg);
+  // background-repeat: no-repeat;
+  // background-position: 10px center;
+  color: $black;
+
+  &::placeholder {
+    color: $black;
+  }
+  &:focus {
+  }
+}
+
+input[type="submit"] {
+  border: none;
+  box-shadow: none;
+  font-family: $default-font-family;
+  font-size: 1rem;
+  align-self: flex-start;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.company-shopping {
+    #company-shopping {
+      & + label {
+        &::before {
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  #another-shipping {
+    & + label {
+      &::before {
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.radio-wrapper {
+  margin-bottom: 10px;
+}
+
+.required-asterisk {
+  &::after {
+    content: "*";
+    display: inline-block;
+    color: #b41111;
+    margin-left: 0.3em;
+  }
+}
+
+.filter-label.no-display {
+  display: none;
+}
+
+body:not(.customer-page) {
+  #register-form {
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 100px;
+    background-color: $color-page-background;
+    border: 1px solid $color-font;
+    border-radius: 5px;
+
+    @media (max-width: 767px) {
+      padding: 30px 20px;
+    }
+  }
+}
+
+#register-form {
+  .btn.btn-secondary {
+    border: 1px solid $color-primary;
+  }
+}

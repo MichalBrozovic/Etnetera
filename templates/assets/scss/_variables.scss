@@ -1,0 +1,68 @@
+// LAYOUT VARIABLES
+$container-width: 1440px;
+$container-padding: 2rem;
+$container-padding-mobile: 20px;
+$breakpoint-mobile: 767px;
+$breakpoint-tablet: 991px;
+$columns-gap: 20px;
+$columns-gap-mobile: 20px;
+$sidebar-width: 264px;
+$layout-gap: 20px;
+
+// COLORS
+$color-font: #000000;
+$color-primary: #e84e0e;
+$color-secondary: #e96934;
+$color-accent: #e84e0e;
+$color-font-invert: #ffffff;
+$color-font-secondary: #262626;
+$color-header: #ffffff;
+
+$section-bg: #f2f2f2;
+
+$newsletter:#ea1c0a;
+$grey-1:#999999;
+$tooltip:#464646;
+$color-time-low:#ffc59b;
+$color-time-medium: #f88c6c;
+$color-time-high: #e64e21;
+
+$black: #000;
+$black-90: rgba(0, 0, 0, 0.9);
+$black-80: rgba(0, 0, 0, 0.8);
+$black-70: rgba(0, 0, 0, 0.7);
+$black-60: rgba(0, 0, 0, 0.6);
+$black-50: rgba(0, 0, 0, 0.5);
+$black-40: rgba(0, 0, 0, 0.4);
+$black-30: rgba(0, 0, 0, 0.3);
+$white: #fff;
+
+// FONTS
+$default-font-size: 16;
+
+$h1: 72;
+$h1-mobile: 32;
+
+$h2: 48;
+$h2-small: 36;
+$h2-big: 64;
+$h2-mobile: 32;
+$h2-small-mobile: 28;
+$h3: 36;
+$h3-big: 38;
+$h3-mig: 32;
+$h3-small: 20;
+$h3-mobile: 24;
+$h3-big-mobile: 28;
+$h4: 22;
+$h4-mobile: 20;
+
+$h5: 22;
+$h5-mobile: 18;
+
+$h6: 20;
+$h6-mobile: 18;
+
+$default-font-family: "Open Sans", sans-serif;
+$heading-font-family: "Open Sans", sans-serif;
+$speacial-font-family: "Myriad Pro", sans-serif;

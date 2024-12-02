@@ -1,0 +1,265 @@
+
+
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/openSans/OpenSans-MediumItalic.woff2') format('woff2'),
+        url('../fonts/openSans/OpenSans-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/openSans/OpenSans-ExtraBoldItalic.woff2') format('woff2'),
+        url('../fonts/openSans/OpenSans-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/openSans/OpenSans-Medium.woff2') format('woff2'),
+        url('../fonts/openSans/OpenSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/openSans/OpenSans-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/openSans/OpenSans-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/openSans/OpenSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/openSans/OpenSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/openSans/OpenSans-Light.woff2') format('woff2'),
+        url('../fonts/openSans/OpenSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/openSans/OpenSans-Italic.woff2') format('woff2'),
+        url('../fonts/openSans/OpenSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/openSans/OpenSans-ExtraBold.woff2') format('woff2'),
+        url('../fonts/openSans/OpenSans-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/openSans/OpenSans-BoldItalic.woff2') format('woff2'),
+        url('../fonts/openSans/OpenSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/openSans/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/openSans/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/openSans/OpenSans-Regular.woff2') format('woff2'),
+        url('../fonts/openSans/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/openSans/OpenSans-LightItalic.woff2') format('woff2'),
+        url('../fonts/openSans/OpenSans-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/myriadPro/MyriadPro-BoldCond.woff2') format('woff2'),
+        url('../fonts/myriadPro/MyriadPro-BoldCond.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/myriadPro/MyriadPro-SemiboldIt.woff2') format('woff2'),
+        url('../fonts/myriadPro/MyriadPro-SemiboldIt.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/myriadPro/MyriadPro-BoldIt.woff2') format('woff2'),
+        url('../fonts/myriadPro/MyriadPro-BoldIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/myriadPro/MyriadPro-Light.woff2') format('woff2'),
+        url('../fonts/myriadPro/MyriadPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/myriadPro/MyriadPro-Regular.woff2') format('woff2'),
+        url('../fonts/myriadPro/MyriadPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/myriadPro/MyriadPro-CondIt.woff2') format('woff2'),
+        url('../fonts/myriadPro/MyriadPro-CondIt.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/myriadPro/MyriadPro-Bold.woff2') format('woff2'),
+        url('../fonts/myriadPro/MyriadPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/myriadPro/MyriadPro-Cond.woff2') format('woff2'),
+        url('../fonts/myriadPro/MyriadPro-Cond.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/myriadPro/MyriadPro-BoldCondIt.woff2') format('woff2'),
+        url('../fonts/myriadPro/MyriadPro-BoldCondIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/myriadPro/MyriadPro-Semibold.woff2') format('woff2'),
+        url('../fonts/myriadPro/MyriadPro-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+@import 'mixins';
+@import 'variables';
+@import 'specific-variables';
+@import 'basics/reset';
+@import 'basics/start';
+
+
+@import 'main/header';
+@import 'main/footer';
+@import 'main/forms';
+@import 'main/general';
+
+@import 'modal/modal';
+
+@import 'main/basics';
+
+@media screen and (min-width: 2000px) and (min-height: 0px) {
+    @import "custom/custom2000";
+}
+
+
+@media screen and (max-width: 1919px) and (min-width: 0px) {
+    @import "custom/custom1920";
+}
+
+@media screen and (max-width: 1550px) and (min-width: 0px) {
+    @import "custom/custom1178";
+
+    .container,
+    .container-second {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 0px) {
+    @import "custom/custom0978";
+}
+
+@media screen and (max-width: 1023px) and (min-width: 0px) {
+    @import "custom/custom0768";
+}
+
+@media screen and (max-width: 767px) and (min-width: 0px) {
+
+    .container,
+    .container-header {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    @import "custom/custom0480";
+}
+
+@media screen and (max-width: 480px) and (min-width: 0px) {
+    @import "custom/custom0300";
+}

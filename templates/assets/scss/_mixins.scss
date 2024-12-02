@@ -1,0 +1,102 @@
+@mixin container() {
+  max-width: calc($container-width + ($container-padding * 2));
+  margin: 0 auto;
+  width: 100%;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+
+  @media (max-width: $breakpoint-mobile) {
+    padding-left: $container-padding-mobile;
+    padding-right: $container-padding-mobile;
+  }
+}
+
+@mixin t($t) {
+  -webkit-transition: all $t ease-in-out;
+  -moz-transition: all $t ease-in-out;
+  -o-transition: all $t ease-in-out;
+  transition: all $t ease-in-out;
+}
+
+@mixin box-sizing($value) {
+  -webkit-box-sizing: $value;
+  -moz-box-sizing: $value;
+  box-sizing: $value;
+}
+
+@function emMM($size, $context: $default-font-size) {
+  @return calc(($size / $context) * 1em);
+}
+
+@function remMM($size, $context: $default-font-size) {
+  @return calc(($size / $context) * 1rem);
+}
+
+@mixin dividerBottom {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    max-width: 1440px;
+    width: 100%;
+    background-color: $color-font-20;
+  }
+
+  &::after {
+    content: url(../img/icon/divider-logo.png);
+    background-color: $color-page-background;
+    padding: 11px;
+    width: 37px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+  }
+
+  padding-bottom: 100px;
+
+  &::before {
+    bottom: 0;
+  }
+
+  &::after {
+    bottom: 0;
+    transform: translate(-50%, 15px);
+  }
+
+  @media (max-width: 767px) {
+    padding-bottom: 0;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@mixin underline-mid($bg-color: $color-font, $height: 1px, $bottom: 0) {
+  position: relative;
+  @include t(0.3s);
+
+  &:hover {
+      &::before {
+          transform: scale(1, 1);
+      }
+  }
+
+  &::before {
+      @include t(0.3s);
+      content: "";
+      left: 0;
+      bottom: $bottom;
+      width: 100%;
+      height: $height;
+      display: block;
+      background-color: $bg-color;
+      position: absolute;
+      transform: scale(0, 1);
+  }
+}
